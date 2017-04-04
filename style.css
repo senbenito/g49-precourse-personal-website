@@ -1,0 +1,13 @@
+input {
+  width: 333px;
+}
+
+.caveat {
+  color: red;
+  font-size: small;
+}
+
+.userResponse {
+  color: red;
+  font-size: large;
+}
