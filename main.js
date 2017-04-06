@@ -6,16 +6,16 @@ $(document).ready(function() {
     var img2 = $('.img2');
     var img3 = $('.img3');
     var i = 0;
-      while (i<30){
+      while (i<10){
           img1.animate({height: '300px', opacity: '0.4'}, "slow");
-          img3.fadeOut({height: '200px', opacity: '0.4'}, 3000)
+          img3.fadeOut({height: '200px', opacity: '1'}, "slow")
           img2.animate({height: '100px', opacity: '0.4'}, "slow");
           img1.animate({width: '200px', opacity: '0.8'}, "slow");
           img2.animate({height: '300px', opacity: '0.4'}, "slow");
-          img3.fadeIn({height: '150px', opacity: '0.4'}, 3000)
+          img3.fadeIn({height: '150px', opacity: '0.4'}, "slow")
           img1.animate({height: '100px', opacity: '0.4'}, "slow");
-          img3.slideUp({height: '50px', opacity: '0.4'})
-          img2.animate({width: '100px', opacity: '0.8'}, "slow");
+          img3.slideUp({height: '50px', opacity: '0.4'}, "slow")
+          img2.animate({width: '100px', opacity: '1'}, "slow");
           img1.animate({width: '100px', opacity: '0.8'}, "slow");
           img2.animate({width: '300px', opacity: '0.8'}, "slow");
           i++
