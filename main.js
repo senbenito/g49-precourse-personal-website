@@ -1,6 +1,26 @@
 $(document).ready(function() {
 
     console.log('Ready to go!');
+
+    var img1 = $('.img1');
+    var img2 = $('.img2');
+    var img3 = $('.img3');
+    var i = 0;
+      while (i<30){
+          img1.animate({height: '300px', opacity: '0.4'}, "slow");
+          img3.fadeOut({height: '200px', opacity: '0.4'}, 3000)
+          img2.animate({height: '100px', opacity: '0.4'}, "slow");
+          img1.animate({width: '200px', opacity: '0.8'}, "slow");
+          img2.animate({height: '300px', opacity: '0.4'}, "slow");
+          img3.fadeIn({height: '150px', opacity: '0.4'}, 3000)
+          img1.animate({height: '100px', opacity: '0.4'}, "slow");
+          img3.slideUp({height: '50px', opacity: '0.4'})
+          img2.animate({width: '100px', opacity: '0.8'}, "slow");
+          img1.animate({width: '100px', opacity: '0.8'}, "slow");
+          img2.animate({width: '300px', opacity: '0.8'}, "slow");
+          i++
+      };
+
     $('#madLibs').hide();
     $('#results').hide();
 
@@ -57,11 +77,11 @@ $(document).ready(function() {
         $('#petResponse').append(pet);
 
         if (pet === 'cat') {
-            $('#petGame').append(`"Indeed do we, Princess Mary Babycorn be she, but she's yowly and ${presentVerb1} on the bed."`)
+            $('#petGame').append(`"Indeed do we, Princess Mary Babycorn be she, but she's yowly and <span class='response'>${presentVerb1}</span> on the bed."`)
         } else if (pet === 'dog') {
-            $('#petGame').append(`"The dog is Lola, who loves cherry cola, but will drink ${soda} if led."`);
+            $('#petGame').append(`"The dog is Lola, who loves cherry cola, but will drink <span class='response'>${soda}</span> if led."`);
         } else {
-            $('#petGame').append(`"We have a dog and a cat, but nothing like that - who just asks for a ${pet}?", I said.`)
+            $('#petGame').append(`"We have a dog and a cat, but nothing like that - who just asks for a <span class='response'>${pet}</span>?", I said.`)
         }
 
         $('#explicativeResponse').append(explicative);
@@ -89,6 +109,7 @@ $(document).ready(function() {
 // }
 
         // JQUERY for adieu to toodle-dee-doo every few seconds
+
 
 
 

@@ -7,7 +7,14 @@ input {
   font-size: small;
 }
 
-.userResponse {
-  color: red;
+.response {
+  font-family: "Courier New", monospace;
+  color: blue;
   font-size: large;
+}
+
+#results {
+  font-family: "Courier New", monospace;
+  background-image: url(images/News-print1.jpg);
+  background-color: #ffffcc;
 }
